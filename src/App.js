@@ -1,26 +1,22 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import Menu from "./components/Menu";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> reload
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Menu item1="HOME" item2="INTRO" action={this._alertHandler} />
+
+        <Menu item1="TEST" item2="EXAM" action={this._alertHandler} />
+
+        <Menu item1="라이언" item2="어피치" action={this._alertHandler} />
+      </div>
+    );
+  }
+
+  _alertHandler = () => {
+    alert("Why? 왜불러요?");
+  };
 }
 
 export default App;

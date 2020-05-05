@@ -2,9 +2,9 @@
 
 ## basic react
 
-- [ ] JSX
-- [ ] COMPONENT
+- [x] JSX
+- [x] COMPONENT
 - [ ] STATE
-- [ ] PROPS
+- [x] PROPS
 - [ ] ROUTER
 - [ ] MAP
